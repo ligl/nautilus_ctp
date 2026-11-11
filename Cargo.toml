@@ -1,0 +1,14 @@
+[package]
+name = "nautilus-ctp-compat-smoke"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+# Integration proof only: no CTP SDK and no Python.
+# All Nautilus dependencies use the exact same immutable revision.
+[dependencies]
+anyhow = "1"
+nautilus-common = { git = "https://github.com/nautechsystems/nautilus_trader.git", rev = "4fe0e3c3b60f05b31f8682f24609d5914ddd4267" }
+nautilus-core = { git = "https://github.com/nautechsystems/nautilus_trader.git", rev = "4fe0e3c3b60f05b31f8682f24609d5914ddd4267" }
+nautilus-live = { git = "https://github.com/nautechsystems/nautilus_trader.git", rev = "4fe0e3c3b60f05b31f8682f24609d5914ddd4267" }
+nautilus-model = { git = "https://github.com/nautechsystems/nautilus_trader.git", rev = "4fe0e3c3b60f05b31f8682f24609d5914ddd4267" }
